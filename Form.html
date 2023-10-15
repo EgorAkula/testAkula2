@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Формы</title>
+</head>
+
+<body>
+    <!--Тег формы-->
+    <form action="">
+        <!--Пле для логина-->
+        <p>
+            login <input type="text" placeholder="enter your login" name="login" required>
+        </p>
+        <!--Поле пароля-->
+        <p>
+            password <input type="password" placeholder="enter your password" name="pass" required>
+        </p>
+        <!--Поле для галочек-->
+        <h3>Ваши интересы</h3>
+        <p>
+            <label> <input type="checkbox" name="interess" value="sport" id="sport"> спорт </label><br>
+            <label> <input type="checkbox" name="interess" value="swimming" id="swimming"> плавание </label><br>
+            <label> <input type="checkbox" name="interess" value="running" id="running"> бег </label><br>
+            <label> <input type="checkbox" name="interess" value="programming" id="programming"> программирование
+            </label><br>
+            <label> <input type="checkbox" name="interess" value="test" id="test" disabled> тест</label><br>
+            <label> <input type="checkbox" name="interess" value="test" id="test" checked> тест2</label><br>
+
+
+
+
+        </p>
+        <!--Поле для 1 варианта ответа-->
+        <h3>Способы оплаты</h3>
+        <p>
+            <label> <input type="radio" name="pay" value="card" id="card"> Карта</label><br>
+            <label> <input type="radio" name="pay" value="SBP" id="SBP"> СБП</label><br>
+            <label> <input type="radio" name="pay" value="money" id="money"> Наличка</label><br>
+        </p>
+        <!--Поле для выбора элемента-->
+        <h3>Ваш город</h3>
+        <p>
+            <select name="city">
+                <option value="moscow">Москва</option>
+                <option value="Tyumen" selected>Тюмень</option>
+                <option value="SaintsPetersburg">СБП</option>
+            </select>
+        </p>
+        <!--Поле для коммента-->
+        <h3>Введите ваш коментарий</h3>
+        <textarea name="Your comment" cols="30" rows="10"></textarea>
+
+        <!--Кнопка для сброса настроек-->
+        <p>
+            <button type="reset">Сбросить все настройки</button>
+        </p>
+
+        <!--Кнопка для входа (кнопка)-->
+        <p>
+            <input type="submit" value="Войти">
+        </p>
+
+    </form>
+</body>
+
+</html>
